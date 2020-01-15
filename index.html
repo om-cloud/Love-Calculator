@@ -69,11 +69,14 @@
 <script>
   function loveCalculator() {
     var person = prompt("Please enter your name");
+var personfamily = prompt("Please enter your family name");
     var lover = prompt("Please enter your lover name");
-    if (person === "" || lover === "") {
-      alert("Please fill in your names")
+    var loverfamily = prompt("Please enter your lover family name");
+    if ((person === "") || (lover === "") || (personfamily === "") || (loverfamily === "")) {
+      alert("Please fill in all your names")
     } else {
-      if ((person === "kora" && lover === "yanai") || (person === "yanai" && lover === "kora") || (person === "avigail" && lover === "oriisrael")) {
+      if ((person === "kora" && lover === "yanai" && personfamily === "matalon" && loverfamily === "fisher") || (person === "yanai" &&
+          personfamily === "fisher" && lover === "kora" && loverfamily === "matalon") || (person === "avigail" && personfamily === "matalon" && lover === "ori" && loverfamily === "israel")) {
         alert("The matching chances with your potential lover is: 100% !!");
       } else {
         var x = Math.random();
