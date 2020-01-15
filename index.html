@@ -1,0 +1,57 @@
+<html>
+<<title>Love Calculator</title>
+<meta charset="utf-8">
+<meta name="Love Calculator" content="tells you if you and your lover match" >
+
+<style media="screen">
+  h1 {
+    color: white;
+    text-align: center;
+    padding: 10%;
+  }
+
+  div {
+    border: 1px solid grey;
+    margin: auto;
+    background-color: pink;
+    width: 60%;
+    height: 40%;
+  }
+
+  p {
+    margin: auto;
+  }
+
+  button {
+    margin: 1%;
+  }
+
+  button:hover {
+    opacity: 0.8;
+
+  }
+</style>
+<div>
+
+
+  <h1>Love Calculator</h1>
+  <button onclick="loveCalculator();"> Try it ! </button>
+</div>
+
+<script>
+  function loveCalculator() {
+    var person = prompt("Please enter your name");
+    var lover = prompt("Please enter your lover name");
+    if ((person === "kora" && lover === "yanai") || (person === "yanai" && lover === "kora") || (person === "avigail" && lover === "oriisrael")) {
+      alert("The matching chances with your potential lover is: 100%");
+    } else {
+      var x = Math.random();
+      var y = x * 100;
+      var z = Math.floor(y);
+      var n = z + 1;
+      alert("The matching chances with your potential lover is: " + n + "%");
+    }
+  }
+</script>
+
+</html>
