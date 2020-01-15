@@ -1,75 +1,78 @@
 <html>
 <title>Love Calculator</title>
-  <meta charset="utf-8">
-  <meta name="Love Calculator" content="tells you if you and your lover match">
+<meta charset="utf-8">
+<meta name="Love Calculator" content="tells you if you and your lover match">
 
-  <style media="screen">
-    h1 {
-      font-style: italic;
-      color: white;
-      text-align: center;
-      padding: 10%;
-      font-size: 350%;
-    }
+<style media="screen">
+  h1 {
+    font-style: italic;
+    color: white;
+    text-align: center;
+    padding: 10%;
+    font-size: 350%;
+  }
 
-    img {
-      margin-top: 7%;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 35%;
-    }
+  img {
+    margin-top: 7%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+  }
 
-    div.text {
-      border: 1px solid grey;
-      margin: auto;
-      background-color: #FF69B4;
-      width: 60%;
-      height: 40%;
-    }
+  div.text {
+    border: 1px solid grey;
+    margin: auto;
+    background-color: #FF69B4;
+    width: 60%;
+    height: 40%;
+  }
 
-    div.text:hover {
-      opacity: 0.85;
-      transition-duration: 0.4s;
-    }
+  div.text:hover {
+    opacity: 0.85;
+    transition-duration: 0.4s;
+  }
 
-    p {
-      margin: auto;
+  p {
+    margin: auto;
 
-    }
+  }
 
-    button {
-      margin: -9% auto;
-      display: block;
-      font-size: 176%;
-      
-      color: #800000;
-      border: solid #DCDCDC 2px;
-    }
+  button {
+    margin: -9% auto;
+    display: block;
+    font-size: 176%;
 
-    button:hover {
-      color: #800080;
-      opacity: 0.8;
-      font-size: 176%;
-      margin: -9% auto;
-      border: solid white 2px;
+    color: #800000;
+    border: solid #DCDCDC 2px;
+  }
 
-      transition-duration: 0.4s;
-    }
-  </style>
-  <div class="text">
+  button:hover {
+    color: #800080;
+    opacity: 0.8;
+    font-size: 176%;
+    margin: -9% auto;
+    border: solid white 2px;
+
+    transition-duration: 0.4s;
+  }
+</style>
+<div class="text">
 
 
-    <h1>Love Calculator</h1>
-    <button onclick="loveCalculator();"> Try it ! </button>
-  </div>
-  <div class="image">
-    <img src="https://lovezonehomeblog.files.wordpress.com/2019/06/name-love-calculator-test.png" width:30% height:20%>
-  </div>
-  <script>
-    function loveCalculator() {
-      var person = prompt("Please enter your name");
-      var lover = prompt("Please enter your lover name");
+  <h1>Love Calculator</h1>
+  <button onclick="loveCalculator();"> Try it ! </button>
+</div>
+<div class="image">
+  <img src="https://lovezonehomeblog.files.wordpress.com/2019/06/name-love-calculator-test.png" width:30% height:20%>
+</div>
+<script>
+  function loveCalculator() {
+    var person = prompt("Please enter your name");
+    var lover = prompt("Please enter your lover name");
+    if (person === "" || lover === "") {
+      alert("Please fill in your names")
+    } else {
       if ((person === "kora" && lover === "yanai") || (person === "yanai" && lover === "kora") || (person === "avigail" && lover === "oriisrael")) {
         alert("The matching chances with your potential lover is: 100% !!");
       } else {
@@ -80,6 +83,7 @@
         alert("The matching chances with your potential lover is: " + n + "%");
       }
     }
-  </script>
+  }
+</script>
 
 </html>
