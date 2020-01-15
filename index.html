@@ -1,57 +1,76 @@
 <html>
 <<title>Love Calculator</title>
-<meta charset="utf-8">
-<meta name="Love Calculator" content="tells you if you and your lover match" >
+  <meta charset="utf-8">
+  <meta name="Love Calculator" content="tells you if you and your lover match">
 
-<style media="screen">
-  h1 {
-    color: white;
-    text-align: center;
-    padding: 10%;
-  }
-
-  div {
-    border: 1px solid grey;
-    margin: auto;
-    background-color: pink;
-    width: 60%;
-    height: 40%;
-  }
-
-  p {
-    margin: auto;
-  }
-
-  button {
-    margin: 1%;
-  }
-
-  button:hover {
-    opacity: 0.8;
-
-  }
-</style>
-<div>
-
-
-  <h1>Love Calculator</h1>
-  <button onclick="loveCalculator();"> Try it ! </button>
-</div>
-
-<script>
-  function loveCalculator() {
-    var person = prompt("Please enter your name");
-    var lover = prompt("Please enter your lover name");
-    if ((person === "kora" && lover === "yanai") || (person === "yanai" && lover === "kora") || (person === "avigail" && lover === "oriisrael")) {
-      alert("The matching chances with your potential lover is: 100%");
-    } else {
-      var x = Math.random();
-      var y = x * 100;
-      var z = Math.floor(y);
-      var n = z + 1;
-      alert("The matching chances with your potential lover is: " + n + "%");
+  <style media="screen">
+    h1 {
+      font-style: italic;
+      color: white;
+      text-align: center;
+      padding: 10%;
+      font-size: 350%;
     }
-  }
-</script>
+
+    img {
+      margin-top: 7%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 35%;
+    }
+
+    div.text {
+      border: 1px solid grey;
+      margin: auto;
+      background-color: #FF69B4;
+      width: 60%;
+      height: 40%;
+    }
+
+    p {
+      margin: auto;
+
+    }
+
+    button {
+      margin-left: 45%;
+      font-size: 176%;
+      margin-top: -9%;
+      color:red;
+    }
+
+    button:hover {
+      margin-left: 45%;
+      opacity: 0.7;
+      font-size: 176%;
+      margin-top: -9%;
+      border: solid white 2px;
+    }
+  </style>
+  <div class="text">
+
+
+    <h1>Love Calculator</h1>
+    <button onclick="loveCalculator();"> Try it ! </button>
+  </div>
+  <div class="image">
+    <img src="https://lovezonehomeblog.files.wordpress.com/2019/06/name-love-calculator-test.png" width:30% height:20%>
+  </div>
+  <script>
+    function loveCalculator() {
+      var person = prompt("Please enter your name");
+      var lover = prompt("Please enter your lover name");
+      if ((person === "kora" && lover === "yanai") || (person === "yanai" && lover === "kora") || (person === "avigail" && lover === "oriisrael")) {
+        alert("The matching chances with your potential lover is: 100%");
+      } else {
+        var x = Math.random();
+        var y = x * 100;
+        var z = Math.floor(y);
+        var n = z + 1;
+        alert("The matching chances with your potential lover is: " + n + "%");
+      }
+    }
+  </script>
 
 </html>
